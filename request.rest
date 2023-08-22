@@ -1,0 +1,72 @@
+
+                                ########################################## USER #################################
+GET http://127.0.0.1/users
+
+###
+GET http://127.0.0.1/users/2
+
+###
+POST http://127.0.0.1/users
+Content-Type: application/json
+
+{
+    "nom": "Doucoure",
+    "prenom": "Moustapha",
+    "login": "Mous",
+    "password": "douc",
+    "profil": "Admin"
+}
+
+###
+PATCH http://127.0.0.1/users/1
+Content-Type: application/json
+
+{
+    "nom": "Doucoure",
+    "prenom": "Baba",
+    "login": "Mous",
+    "password": "douc",
+    "profil": "Admin"
+}
+ 
+###
+DELETE http://127.0.0.1/users/2
+
+
+
+
+                                ########################################## DIPLOME #################################
+###
+GET http://127.0.0.1/diplomes
+
+###
+GET http://127.0.0.1/diplomes/1
+
+###
+POST http://127.0.0.1/diplomes
+Content-Type: application/json
+
+{
+    "filiere": "Génie Logiciel",
+    "niveau": "Mater",
+    "nom": "Dolo",
+    "prenom": "Pière",
+    "annee": "2020-2021",
+    "date_deliv": "20/10/2021"
+}
+
+###
+PATCH http://127.0.0.1/diplomes/2
+Content-Type: application/json
+
+{
+    "filiere": "Génie Logiciel",
+    "niveau": "Mater",
+    "nom": "Dembelé",
+    "prenom": "Jean Pière",
+    "annee": "2020-2021",
+    "date_deliv": "20/10/2021"
+}
+ 
+###
+DELETE http://127.0.0.1/diplomes/2
