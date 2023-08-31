@@ -9,7 +9,7 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors({
-    origin: 'http://esgicdiplome.s3-website.eu-north-1.amazonaws.com'
+    origin: '*'
 }));
 
 
