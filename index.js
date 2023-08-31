@@ -7,9 +7,11 @@ import * as path from 'path';
 
 const app = express();
 const PORT = 5000;
+
 app.use(cors({
-    origin: '*'
+    origin: 'http://esgicdiplome.s3-website.eu-north-1.amazonaws.com'
 }));
+
 app.use(express.json());
 app.use(UserRoute);
 app.use(DiplomeRoute);
