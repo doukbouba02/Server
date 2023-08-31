@@ -12,15 +12,11 @@ app.use(cors({
     origin: 'http://esgicdiplome.s3-website.eu-north-1.amazonaws.com'
 }));
 
+
 app.use(express.json());
 app.use(UserRoute);
 app.use(DiplomeRoute);
 
-
-// let port = process.env.PORT;
-// if (port == null || port == "") {
-//     port = 5000;
-// }
 app.get('/', function (req, res) {
     res.send('Hello from the back-end.');
 });
